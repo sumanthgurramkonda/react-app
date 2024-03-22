@@ -40,7 +40,7 @@ const Weatherapp = () => {
           sethumidity(data.main.humidity)
           const iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
           
-        if(data.weather[0].icon==='02d' || data.weather[0].icon==='02n' ){
+         if(data.weather[0].icon==='02d' || data.weather[0].icon==='02n' ){
             setWicon(cloud_icon)
           }
           else if(data.weather[0].icon==='03d' || data.weather[0].icon==='03n'|| data.weather[0].icon==='04d' || data.weather[0].icon==='04n' ){
